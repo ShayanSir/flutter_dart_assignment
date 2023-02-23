@@ -1,0 +1,180 @@
+void main() {
+
+  //Question no 01//
+  // List studentList = ['shayan', 'rayyan', 'hunain', 'rafay'];
+  // print(studentList);
+
+
+
+
+  //Question no 02//
+  // List<String> Listdays = [];
+  // Listdays.addAll(['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']); 
+  // print(Listdays);
+
+
+
+
+
+  //Question no 03//
+  // create a list of days
+  List<String> daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+  // remove days from the end of the list one by one
+  while (daysOfWeek.isNotEmpty) {
+    String day = daysOfWeek.removeLast();
+    print('Removed day: $day');
+  }
+
+
+//Question no 04//
+  // create a list of numbers
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  // create an empty list to store whether each number is even or odd
+  List<bool> isEvenList = [];
+
+  // iterate through each number and check if it's even or odd
+  for (int number in numbers) {
+    if (number % 2 == 0) {
+      isEvenList.add(true);
+    } else {
+      isEvenList.add(false);
+    }
+  }
+
+  // print the original list of numbers
+  print('Numbers: $numbers');
+
+  // print the list of whether each number is even or odd
+  print('Is Even: $isEvenList');
+
+
+
+
+//Question no 05//
+ // create a list of numbers
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  // initialize variables to count the number of even and odd numbers
+  int evenCount = 0;
+  int oddCount = 0;
+
+  // iterate through each number and check if it's even or odd
+  for (int number in numbers) {
+    if (number % 2 == 0) {
+      evenCount++;
+    } else {
+      oddCount++;
+    }
+  }
+
+  // print the original list of numbers
+  print('Numbers: $numbers');
+
+  // print the number of even and odd numbers using increment and decrement operators
+  print('Even Count: ${evenCount++}');
+  print('Odd Count: ${--oddCount}');
+
+
+//Question no 06//
+void sumAndMultiply(List<int> lst) {
+  int sum = 0;
+  List<int> result = [];
+  for (int i = 0; i < lst.length; i++) {
+    sum += lst[i];
+    result.add(i * lst[i]);
+  }
+  print('The sum of the list is: $sum');
+  print('The list after multiplication is: $result');
+}
+
+// Example usage
+  List<int> myList = [1, 2, 3, 4, 5];
+  sumAndMultiply(myList);
+
+
+//Question no 07//
+  void findMinMax(List<int> numbers) {
+  int smallest = numbers[0];
+  int greatest = numbers[0];
+  
+  for (int num in numbers) {
+    if (num < smallest) {
+      smallest = num;
+    }
+    if (num > greatest) {
+      greatest = num;
+    }
+  }
+  
+  print('The smallest number in the list is: $smallest');
+  print('The greatest number in the list is: $greatest');
+}
+
+// Example usage
+  List<int> numbers = [4, 10, 2, 8, 1, 15];
+  findMinMax(numbers);
+
+
+
+//Question no 08//
+  Map<String, String> contactList = {
+'Shayan': '123-4567',
+'Muhammad': '234-5678',
+'Hussain': '345-6789',
+'Rafay': '456-7890'};
+
+  Iterable<String> keysWithLengthFour =
+      contactList.keys.where((key) => key.length == 4);
+
+  print('Keys with length 4: $keysWithLengthFour');
+
+
+
+
+//Question no 09//
+  Map<String, Map<String, dynamic>> world = {
+    'Pakistan': {
+      'capitalCity': 'New Delhi',
+      'currency': 'Indian rupee',
+      'language': 'Hindi'
+    },
+    'USA': {
+      'capitalCity': 'Washington D.C.',
+      'currency': 'US dollar',
+      'language': 'English'
+    },
+    'France': {
+      'capitalCity': 'Paris',
+      'currency': 'Euro',
+      'language': 'French'
+    }
+  };
+
+  String country = 'Pakistan';
+  print('Capital of $country: ${world[country]['capitalCity']}');
+  print('Currency of $country: ${world[country]["currency"]}');
+
+
+//Question no 10//
+  Map<String, double> expenses = {
+    'sun': 3000.0,
+    'mon': 3000.0,
+    'tue': 3234.0,
+  };
+
+  if (expenses.containsKey('fri')) {
+    expenses['fri'] = 5000.0;
+  } else {
+    expenses['fri'] = 5000.0;
+  }
+
+  print(expenses);
+
+
+
+
+}
+
+
