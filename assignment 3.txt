@@ -136,9 +136,9 @@ void sumAndMultiply(List<int> lst) {
 //Question no 09//
   Map<String, Map<String, dynamic>> world = {
     'Pakistan': {
-      'capitalCity': 'New Delhi',
-      'currency': 'Indian rupee',
-      'language': 'Hindi'
+      'capitalCity': 'Karachi',
+      'currency': 'Pakistani rupee',
+      'language': 'Urdu'
     },
     'USA': {
       'capitalCity': 'Washington D.C.',
